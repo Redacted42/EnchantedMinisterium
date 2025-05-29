@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Magisches Strafgesetzbuch des Vereinigten Königreichs (MStGB)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Cinzel Decorative', cursive;
+      background: linear-gradient(to bottom, #1b1b1b, #3c3c3c);
+      color: #f0e6d2;
+    }
+    header {
+      background-color: rgba(0,0,0,0.85);
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 2px solid #c9b37e;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #c9b37e;
+      text-shadow: 0 0 10px #ffdd99;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgba(0,0,0,0.6);
+      border-radius: 12px;
+      box-shadow: 0 0 20px #111;
+    }
+    h2 {
+      color: #ffdd99;
+      border-bottom: 1px solid #c9b37e;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    section.law-section {
+      margin-bottom: 2rem;
+    }
+    .paragraph {
+      margin-bottom: 1rem;
+    }
+    .paragraph > h3 {
+      margin: 0.2rem 0;
+      color: #f0e6d2;
+      font-weight: 700;
+    }
+    .paragraph > p {
+      margin: 0.2rem 0 0.5rem 1rem;
+      line-height: 1.3;
+    }
+    .details {
+      margin-left: 1rem;
+      font-style: italic;
+      color: #c9b37e;
+    }
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #222;
+      color: #aaa;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Magisches Strafgesetzbuch des Vereinigten Königreichs (MStGB)</h1>
+    <p>Autorisiert vom Amt für Magische Strafverfolgung und dem Hohen Wizengamot</p>
+  </header>
+  <main id="content"></main>
+  <div class="footer">
+    &copy; 1992 Ministerium für Zauberei. Alle Rechte vorbehalten.
+  </div>
+
+  <script>
+    const lawData = [
+      {
+        section: "Abschnitt I: Allgemeine Verstöße gegen die magische Ordnung",
+        paragraphs: [
+          {
+            num: "§1.1",
+            title: "Bruch des Internationalen Statuts der Geheimhaltung (1692)",
+            description: "Veröffentlichung oder Enthüllung der Existenz der magischen Welt gegenüber Muggeln.",
+            penalties: [
+              "Haftstrafe: 2–6 Jahre Askaban (bei grober Fahrlässigkeit oder Wiederholung bis 10 Jahre)",
+              "Bußgeld: bis 25.000 Galleonen"
+            ]
+          },
+          {
+            num: "§1.2",
+            title: "Unerlaubte Anwendung von Magie durch Minderjährige",
+            description: "Zauberei durch Unter-17-Jährige außerhalb genehmigter Zonen gemäß dem Erlass zur vernunftgemäßen Beschränkung der Zauberei Minderjähriger (1875), wie mehrfach im Tagespropheten und in Harry Potter und der Orden des Phönix erwähnt.",
+            penalties: [
+              "Maßnahme: Verwarnung, ggf. Zauberstabverbot für bis zu 1 Jahr, bei mehrfachem Verstoß Zwangsexmatrikulation aus Hogwarts"
+            ],
+            references: "Text Text"
+          },
+          {
+            num: "§1.3",
+            title: "Gefährdung magischer Öffentlichkeit",
+            description: "Mutwillige Auslösung magischer Zwischenfälle in der Öffentlichkeit.",
+            penalties: [
+              "Bußgeld: bis 15.000 Galleonen",
+              "Haftstrafe: bis 3 Jahre"
+            ]
+          }
+        ]
+      },
+      {
+        section: "Abschnitt II: Verbrechen gegen Personen",
+        paragraphs: [
+          {
+            num: "§2.1",
+            title: "Anwendung Unverzeihlicher Flüche (Imperius, Cruciatus, Todesfluch)",
+            description: "Strikt verboten – unabhängig von Kontext oder Absicht.",
+            penalties: [
+              "Haftstrafe: Lebenslang in Askaban ohne vorzeitige Entlassung"
+            ]
+          },
+          {
+            num: "§2.2",
+            title: "Magisch verursachte Körperverletzung",
+            description: "Verletzung durch offensive Zauber (z. B. Stupor, Confringo).",
+            penalties: [
+              "Haftstrafe: 3–10 Jahre, je nach Schwere und Vorsatz",
+              "Schadenersatzpflicht bei Personenschaden"
+            ]
+          },
+          {
+            num: "§2.3",
+            title: "Tötung eines magischen Wesens",
+            description: "Wissentliche Tötung eines geschützten Wesens (z. B. Hippogreif, Hauself, Zentaur). Ein Präzedenzfall ist der Fall Seidenschnabel, eines Hippogreifs, der 1993 nach einem Zwischenfall mit Draco Malfoy zum Tode verurteilt wurde – ein Urteil, das später durch Zeitreise rückgängig gemacht werden konnte (Harry Potter und der Gefangene von Askaban, Kapitel 21–22).",
+            penalties: [
+              "Haftstrafe: 5–12 Jahre",
+              "Schadenersatz und dauerhaftes Verbot in der magischen Kreaturenpflege"
+            ]
+          },
+          {
+            num: "§2.4",
+            title: "Verwendung dunkler Magie gegen Lebewesen",
+            description: "Nicht-unverzeihliche, aber gefährliche Flüche mit dunkler Herkunft.",
+            penalties: [
+              "Haftstrafe: 10–20 Jahre"
+            ]
+          }
+        ]
+      }
+      // ... hier können weitere Abschnitte ergänzt werden ...
+    ];
+
+    function renderLaw() {
+      const container = document.getElementById('content');
+      lawData.forEach(section => {
+        const sectionEl = document.createElement('section');
+        sectionEl.className = 'law-section';
+        const h2 = document.createElement('h2');
+        h2.textContent = section.section;
+        sectionEl.appendChild(h2);
+
+        section.paragraphs.forEach(p => {
+          const paraDiv = document.createElement('div');
+          paraDiv.className = 'paragraph';
+
+          const h3 = document.createElement('h3');
+          h3.textContent = `${p.num} – ${p.title}`;
+          paraDiv.appendChild(h3);
+
+          const desc = document.createElement('p');
+          desc.textContent = p.description;
+          paraDiv.appendChild(desc);
+
+          if (p.penalties) {
+            p.penalties.forEach(penalty => {
+              const pen = document.createElement('p');
+              pen.textContent = '▶ ' + penalty;
+              pen.style.marginLeft = '1.5rem';
+              paraDiv.appendChild(pen);
+            });
+          }
+
+          if (p.references) {
+            const ref = document.createElement('p');
+            ref.textContent = p.references;
+            ref.className = 'details';
+            paraDiv.appendChild(ref);
+          }
+
+          sectionEl.appendChild(paraDiv);
+        });
+
+        container.appendChild(sectionEl);
+      });
+    }
+
+    renderLaw();
+  </script>
+</body>
+</html>
